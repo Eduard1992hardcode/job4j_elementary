@@ -1,9 +1,9 @@
 package ru.job4j.calculator;
 
 public class ArgMethod {
-    public static void hello(String name,int age) {
+    public static void hello(String name, int age) {
         System.out.println("Hello, " + name);
-        System.out.println("Мой возраст: " + age +"лет");
+        System.out.println("Мой возраст: " + age + "лет");
     }
 
     public static void main(String[] args) {
