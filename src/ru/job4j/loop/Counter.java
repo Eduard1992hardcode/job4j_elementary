@@ -7,6 +7,7 @@ public class Counter {
         sum = sum + i;
         }
         return sum;
+
     }
     public static void main(String[] args) {
         System.out.println(sum(0, 10));
