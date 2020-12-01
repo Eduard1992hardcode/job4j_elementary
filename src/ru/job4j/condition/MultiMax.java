@@ -12,16 +12,7 @@ public class MultiMax {
         }
         return result;
     }
-
     public static void main(String[] args) {
         System.out.println(max(1, 4, 2));
     }
 }
-/*1. В этом задании нужно написать метод
-
-public int max(int first, int second, int third)
-
-2. Метод должен возвращать максимум из трех чисел.
-Внутри метода max нужно сравнить попарно первое со вторым и максимум из них сравнить с третьим числом.
-
-В методе нужно использовать вложенный оператор if-else.*/

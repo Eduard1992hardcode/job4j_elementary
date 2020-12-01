@@ -7,12 +7,10 @@ public class Check {
         for (boolean el : data) {
         if (data[i] == el) {
         result = true;
-
         } else {
             result = false;
 break;
         }
-
         }
         }
         return result;

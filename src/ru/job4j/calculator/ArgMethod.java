@@ -5,11 +5,9 @@ public class ArgMethod {
         System.out.println("Hello, " + name);
         System.out.println("Мой возраст: " + age + "лет");
     }
-
     public static void main(String[] args) {
         String name = "Eduard Chelyadinov";
         int age = 28;
-
-         ArgMethod.hello(name, age);
+        ArgMethod.hello(name, age);
     }
 }
