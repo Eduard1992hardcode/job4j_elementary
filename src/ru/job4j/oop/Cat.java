@@ -1,7 +1,13 @@
 package ru.job4j.oop;
 
 public class Cat {
+
+    public String sound() {
+        String voice = "may-may";
+        return voice;
+    }
+
     public static void main(String[] args) {
-        Cat pappy = new Cat();
+        Cat peppy = new Cat();
     }
 }
