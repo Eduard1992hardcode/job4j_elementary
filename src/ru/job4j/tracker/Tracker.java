@@ -34,10 +34,8 @@ public class Tracker {
                 itemsWithoutNull[size] = name;
                 size++;
             }
-            itemsWithoutNull = Arrays.copyOf(itemsWithoutNull, size);
-
         }
-        return itemsWithoutNull;
+        return Arrays.copyOf(itemsWithoutNull, size);
     }
 
     //проверяет в цикле все элементы массива items, сравнивая name (используя метод getName класса Item) с аргументом метода String key.
@@ -45,14 +43,15 @@ public class Tracker {
 // Алгоритм этого метода аналогичен методу findAll.
     public Item[] findByName(String key) {
         Item[] checkItemsWhithKey = new Item[items.length];
+        int s = 0;
         for (int index = 0; index < items.length; index++) {
             var name = items[index];
-            if (name.getName() == key) {
-                checkItemsWhithKey[size] = name;
-                size++;
+            if (name.getName().equals(key)) {
+                checkItemsWhithKey[index] = name;
+                 s++;
             }
         }
-        checkItemsWhithKey = Arrays.copyOf(checkItemsWhithKey, size);
-        return checkItemsWhithKey;
+
+        return Arrays.copyOf(checkItemsWhithKey, s);
     }
 }
