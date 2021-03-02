@@ -32,7 +32,7 @@ public class Tracker {
     }
 
     //проверяет в цикле все элементы массива items, сравнивая name (используя метод getName класса Item) с аргументом метода String key.
-// Элементы, у которых совпадает name, копирует в результирующий массив и возвращает его.
+   // Элементы, у которых совпадает name, копирует в результирующий массив и возвращает его.
 // Алгоритм этого метода аналогичен методу findAll.
     public Item[] findByName(String key) {
         Item[] checkItemsWhithKey = new Item[items.length];
@@ -64,6 +64,7 @@ public class Tracker {
         } else {
             System.arraycopy(items, index + 1, items, index, size - index);
             rls = true;
+            size--;
         }
         return rls;
     }
