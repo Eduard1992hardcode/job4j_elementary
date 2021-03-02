@@ -28,7 +28,7 @@ public class Tracker {
     public Item[] findAll(Item[] items) {
         Item[] itemsWithoutNull = new Item[items.length];
         int size = 0;
-        for (int index = 0; index < items.length; index++) {
+        for (int index = 0; index < size; index++) {
             var name = items[index];
             if (name != null) {
                 itemsWithoutNull[size] = name;
