@@ -18,17 +18,8 @@ public class Tracker {
         return index != -1 ? items[index] : null;
     }
 
-    public Item[] findAll(Item[] items) {
-        Item[] itemsWithoutNull = new Item[items.length];
-        int size = 0;
-        for (int index = 0; index < size; index++) {
-            var name = items[index];
-            if (name != null) {
-                itemsWithoutNull[size] = name;
-                size++;
-            }
-        }
-        return Arrays.copyOf(itemsWithoutNull, size);
+    public Item[] findAll() {
+        return Arrays.copyOf(items, size);
     }
 
     //проверяет в цикле все элементы массива items, сравнивая name (используя метод getName класса Item) с аргументом метода String key.
