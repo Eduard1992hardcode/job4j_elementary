@@ -30,7 +30,7 @@ public class Library {
     private static void printBookIsNameCleanCode(Book[] books, String name) {
         for (int i = 0; i < books.length; i++) {
             Book bk1 = books[i];
-            if (bk1.getName() == name) {
+            if (bk1.getName().equals(name) ) {
                 System.out.println(bk1.getName() + " - " + bk1.getCountPages());
             }
         }
