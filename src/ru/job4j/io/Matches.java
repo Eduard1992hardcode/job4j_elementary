@@ -12,6 +12,15 @@ public class Matches {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
+            while (matches < 1||matches > 3) {
+                System.out.println(player + " введите число от 1 до 3:");
+                matches = Integer.parseInt(input.nextLine());
+              if (matches >= 1||matches <= 3) continue;
+            }
+            if (matches < 0 || matches > 3){
+                System.out.println(player + " введите число от 1 до 3:");
+                matches = Integer.parseInt(input.nextLine());
+            }
             turn = !turn;
             count -= matches;
             System.out.println("Осталось спичек: " + count);/* Остальная логика игры. */
@@ -21,5 +30,6 @@ public class Matches {
         } else {
             System.out.println("Выиграл второй игрок");
         }
+
     }
 }
