@@ -17,4 +17,4 @@ public class Calculator {
         ArgMethod.hello(name, age);
         ArgMethod.hello(name, age);
     }
-}4.1. Аргументы [#295521 #148531]
+}
